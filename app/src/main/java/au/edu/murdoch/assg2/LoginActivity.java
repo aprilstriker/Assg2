@@ -37,8 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //login
-        //asd
-        //ass
+        
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

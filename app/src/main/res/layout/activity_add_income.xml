@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIncomeActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INCOME: "
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <EditText
+        android:id="@+id/editText_AddIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_below="@+id/textViewIncome"/>
+
+    <TextView
+        android:id="@+id/textViewInCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY: "
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="368dp"
+        android:layout_below="@+id/editText_AddIncome"/>
+
+    <Spinner
+        android:id="@+id/spinnerInCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="419dp"
+        android:layout_below="@+id/textViewInCat"/>
+
+    <Button
+        android:id="@+id/buttonSubmitIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT INCOME" />
+
+</LinearLayout>

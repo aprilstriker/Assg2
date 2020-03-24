@@ -45,9 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + SESSION_TABLE_NAME + "(" +
-                SESSION_COLUMN_ID + " integer PRIMARY KEY, " +
-                SESSION_COLUMN_LOGIN + "text)");
-
+                SESSION_COLUMN_ID + "INTEGER PRIMARY KEY, " + SESSION_COLUMN_LOGIN + " TEXT)");
 
         db.execSQL("CREATE TABLE " + USER_TABLE_NAME + "(" +
                 USER_COLUMN_ID + " integer PRIMARY KEY AUTOINCREMENT, " +
